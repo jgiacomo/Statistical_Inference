@@ -1,4 +1,5 @@
-set.seed(546)
+set.seed(333)
+library(ggplot2)
 
 means <- function(n){
     expMeans <- 0
