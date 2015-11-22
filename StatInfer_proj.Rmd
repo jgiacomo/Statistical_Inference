@@ -81,7 +81,7 @@ simulated means. Remember that our means are all taken from 40 random samples of
 the exponential distribution and thus should have less variance than from a
 single sampling. In fact, the variance of the sample mean is given by:
 
-$$ Var (\overline X) = \sigma^2/n,$$
+$$ Var (\bar X) = \sigma^2/n,$$
 
 where $\sigma^2$ is the variance of the population we are sampling from. Now,
 the variance of the sample mean and the variance of our simulation are
@@ -111,7 +111,7 @@ curve of the normal distribution in the density in the first plot. Now, let's
 take it a step further and plot the normal distribution with our simulation
 means. We can plot the normal distribution by using the `dnorm()` function and 
 supplying it with the theoretical mean and standard deviation 
-($\sqrt Var(\overline X)$) so it will be consistent with our data.
+($\sqrt{Var(\bar X)}$) so it will be consistent with our data.
 
 ```{r histNormal, fig.width=4, fig.height=3}
     normHist <- simHistogram + stat_function(fun=dnorm, color="red",
